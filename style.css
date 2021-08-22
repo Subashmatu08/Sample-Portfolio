@@ -9,9 +9,9 @@
 *::before {
   box-sizing: border-box;
 }
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 .landing {
   background-color: rgba(26, 40, 61, 0.87);
   min-height: 100vh;
@@ -71,13 +71,13 @@ body {
 .qual {
   background-color: rgba(26, 40, 61, 0.87);
   /* background-color: rgba(22, 34, 51, 0.87); */
-  min-height: 150vh;
+  min-height: 100vh;
 }
 .qual-1 {
   background-color: rgba(22, 34, 51, 0.87);
+  height: 90vh;
 }
 .qual-col {
-  height: 40vh !important;
   display: flex;
   flex-direction: start;
 }
@@ -86,26 +86,117 @@ body {
   margin: 1em 1em;
   font-size: 0.9em;
 }
-.boxes {
+.qual-2 {
   background-color: transparent;
   font-size: 30px;
 }
+.box-container {
+  transform: translateY(-50%);
+}
 .box {
-  /* background-color: rgb(30, 48, 75); */
-  background: red;
-  min-height: fit-content;
+  display: flex;
+  justify-content: center;
+  min-height: 30vh !important;
+}
+.box-1 {
+  background: rgb(172, 172, 4) !important;
+}
+.box-content {
+  background-color: rgb(36, 56, 83);
+  text-align: center;
+  padding: 30% 0px;
+  font-size: 20px;
+  width: 100%;
+}
+.box-content i {
+  font-size: 1.9rem;
+}
+a {
+  text-decoration: none;
 }
 .projects {
   background: rgba(26, 40, 61, 0.87);
   min-height: 100vh;
 }
-.projectscard {
-  background-color: rgba(26, 40, 61, 0.87);
-  height: 100px;
+.project {
+  display: relative;
 }
-.projectscard:hover::after {
-  content: "hello";
+.project-content {
+  text-align: center;
+  text-decoration: none !important;
+  position: relative;
+}
+.project-content img {
+  width: 100%;
+}
+.project-content p {
+  padding: 10px 0;
+  color: white;
+}
+/* 
+.project {
+  position: relative;
+  margin: 1em;
+}
+
+.project::before,
+.project::after {
+  content: "";
   position: absolute;
-  height: 50px;
-  background: yellow;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+  opacity: 1;
+  transition: transform ease-out 250ms;
 }
+
+.project::before {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: scale(0, 1);
+}
+
+.project::after {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transform: scale(1, 0);
+}
+
+.project:hover::before {
+  transform: scale(1.05, 1);
+}
+
+.project:hover::after {
+  transform: scale(1, 1.05);
+}
+
+.project-content img {
+  width: 100%;
+  display: block;
+  transition: opacity ease-out 250ms;
+}
+
+.project:hover img {
+  opacity: 0.4;
+}
+
+.project-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+}
+
+.project:hover .project-content {
+  opacity: 1;
+}
+
+.project-content p {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+} */
