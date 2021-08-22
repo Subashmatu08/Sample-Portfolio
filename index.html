@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="landing">
+    <div class="landing" id="home">
       <div class="container px-5">
         <!-- navbar -->
         <nav class="pt-5 navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -36,15 +36,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="#home"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#qualifications">Qualifications</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#projects">Projects</a>
                 </li>
               </ul>
             </div>
@@ -56,8 +56,8 @@
             <div class="row">
               <div class="col-md-4 pt-5">
                 <h1 class="h1 fw-5 name">
-                  Subash <br />
-                  Matu.
+                  Sample <br />
+                  Name.
                 </h1>
                 <hr class="name-underline" />
                 <div class="social-icons mt-3">
@@ -74,18 +74,18 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-8">
+              <!-- <div class="col-md-8">
                 <img
                   class="img-fluid"
                   style="z-index: 0"
                   src="./images/man-1.png"
                   alt=""
                 />
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-md-6">
-            <div class="content-right pt-5">
+            <div class="content mx-5 pt-5">
               <p class="text-secondary">-Introduction</p>
               <p class="fs-2 text-white">
                 Full Stack Web Developer and Web Designer
@@ -96,14 +96,100 @@
                 reprehenderit magnam ullam odio. Aperiam dolorum maxime, nostrum
                 ipsum quasi enim laudantium ex repudiandae tempore.
               </p>
-              <a href="">Resume <i class="fas fa-arrow-circle-right"></i></a>
+              <a href=""
+                >Resume <i class="arrow fas fa-arrow-circle-right"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Stats -->
-    <div class="simply" style="height: 100vh"></div>
+    <div class="qual" id="qualifications">
+      <div class="qual-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="content mx-5 pt-5">
+                <p class="text-secondary">-Contact</p>
+                <p class="fs-2 text-white">Feel Free to give Suggestions</p>
+                <p class="text-secondary">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  tempore quaerat, omnis quibusdam cum harum.
+                </p>
+                <a href="" class="pt-5"
+                  >subashmatu08@gmail.com
+                  <i class="arrow fas fa-arrow-circle-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="content mx-5 pt-5">
+                <p class="fs-2 text-white">
+                  Great web design without functionality is a sports car with no
+                  engine .
+                </p>
+                <p class="text-secondary">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  tempore quaerat, omnis quibusdam cum harum.
+                </p>
+                <div class="row">
+                  <div class="col qual-col">
+                    <h1 class="h1" style="color: yellow">5</h1>
+                    <p class="text-white">Years Of Experience</p>
+                  </div>
+                  <div class="col qual-col">
+                    <h1 class="h1" style="color: yellow">50 +</h1>
+                    <p class="text-white">Projects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="boxes row gx-5 text-white">
+            <div class="box col-4">
+              <h5>Product<br />Designer</h5>
+            </div>
+            <div class="box col-4">
+              <h5>Full Stack<br />Developer</h5>
+            </div>
+            <div class="box col-4">
+              <h5>Content<br />Writer</h5>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+      <div class="container">
+        <div class="content">
+          <p class="text-secondary pt-5">-My Projects</p>
+          <p class="fs-2 text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Accusantium, adipisci.
+          </p>
+          <p class="text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa
+            qui sit? Corrupti voluptatem repellat totam praesentium eum, odit
+            officiis.
+          </p>
+        </div>
+        <div class="row g-2">
+          <div class="col-md-4">
+            <div class="projectscard">
+              <img
+                src="../Portfolio/images/verser.jpg"
+                class="img img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="simply" style="height: 100vh"></div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

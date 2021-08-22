@@ -5,17 +5,29 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
 .landing {
   background-color: rgba(26, 40, 61, 0.87);
   min-height: 100vh;
 }
-.nav-link {
+/* .nav-link {
   margin: 0px 0.5em;
   border-bottom: 0px solid red;
 }
 .nav-link:hover {
   border-bottom: 1.5px solid red;
+} */
+.arrow {
+  transition: 0.2s ease-in;
+}
+.content a:hover .arrow {
+  transform: translateX(10px);
 }
 .active {
   color: white;
@@ -37,9 +49,6 @@
   color: yellow;
 }
 
-.content-right {
-  margin: 0 5rem;
-}
 .name {
   color: beige;
   font-size: 60px;
@@ -51,15 +60,52 @@
   padding: 2px 0;
   background-color: rgb(255, 255, 0);
 }
-.content-right a {
+.content a {
   text-decoration: none;
   color: yellow;
   letter-spacing: 1.8px;
 }
-.content-right a i {
+.content a i {
   font-size: 0.8em;
 }
-.simply {
+.qual {
+  background-color: rgba(26, 40, 61, 0.87);
+  /* background-color: rgba(22, 34, 51, 0.87); */
+  min-height: 150vh;
+}
+.qual-1 {
   background-color: rgba(22, 34, 51, 0.87);
+}
+.qual-col {
+  height: 40vh !important;
+  display: flex;
+  flex-direction: start;
+}
+.qual-col p {
+  height: fit-content;
+  margin: 1em 1em;
+  font-size: 0.9em;
+}
+.boxes {
+  background-color: transparent;
+  font-size: 30px;
+}
+.box {
+  /* background-color: rgb(30, 48, 75); */
+  background: red;
+  min-height: fit-content;
+}
+.projects {
+  background: rgba(26, 40, 61, 0.87);
   min-height: 100vh;
+}
+.projectscard {
+  background-color: rgba(26, 40, 61, 0.87);
+  height: 100px;
+}
+.projectscard:hover::after {
+  content: "hello";
+  position: absolute;
+  height: 50px;
+  background: yellow;
 }
